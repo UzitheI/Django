@@ -1,6 +1,10 @@
 {% extends "employee_register/base.html" %}
 
 {%block content%}
-<p>django form to show crud</p>
+<form action="" method="post" autocomplete="off">
+    {%csrf_token%}
+    {{form}}
+    <button type="submit" class="btn btn-success"><i class="fa-solid fa-database"></i>Submit</button>
+</form>
 {%endblock content%}
 
