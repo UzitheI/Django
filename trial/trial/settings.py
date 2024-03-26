@@ -11,15 +11,16 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+#contains the path function which can help to manipulate file system paths
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Build paths inside the project like this: BASE_DIR / 'subdir'.a common approach in django to define the base directory relative to the location of the settings file
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: keep the secret key used in production secret! this secret key is responsible for sessions, token genertion etc
 SECRET_KEY = 'django-insecure-^3wt0*g!4h(vf2nl*m8qf*r8k5mrtn^!1g%(v0(tj1j)1dr14r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
